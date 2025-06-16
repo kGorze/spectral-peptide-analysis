@@ -1,0 +1,107 @@
+
+PeakPickerHiRes started. Processing ...
+
+#Spectra that needed to and could be picked by MS-level:
+  MS-level 1: 2735 / 2735
+  MS-level 2: 11332 / 11332
+14067 spectra and 1 chromatograms stored.
+PeakPickerHiRes took 22.13 s (wall), 21.36 s (CPU), 2.36 s (system), 19.00 s (user); Peak Memory Usage: 1483 MB.
+
+
+PeakPickerHiRes finished!
+
+MSGFPlusAdapter started. Processing ...
+
+Running MSGFPlus search...
+
+
+missedCleavages has a negative value. Assuming unlimited and setting it to 1000.
+
+
+No spectra found in the experiment. Skipping RT annotation.
+
+
+Using prefix decoy string 'DECOY_'
+
+
+Info: using 'Trypsin/P' as enzyme (obtained from idXML) for digestion.
+Peptide identification engine: MS-GF+
+Enzyme: Trypsin/P
+Info: using 'full' as enzyme specificity (obtained from idXML) for digestion.
+
+
+Building trie ... done (0s)
+Compressing trie to BFS format ...
+
+
+ done (0s)
+
+
+Mapping 7317 peptides to 48440 proteins.
+Searching with up to 3 ambiguous amino acid(s) and 0 mismatch(es)!
+
+
+Merge took: 0.00 s (wall), 0.02 s (CPU), 0.00 s (system), 0.02 s (user)
+Memory usage (Aho-Corasick): 12 MB (working set delta), 0 MB (peak working set delta)
+
+
+Aho-Corasick done:
+  found 10350 hits for 7317 of 7317 peptides.
+Peptide hits passing enzyme filter: 10350
+     ... rejected by enzyme filter: 387
+
+
+-----------------------------------
+Peptide statistics
+
+  unmatched                : 0 (0 %)
+  target/decoy:
+    match to target DB only: 5906 (80 %)
+    match to decoy DB only : 1407 (19 %)
+    match to both          : 4 (0 %)
+
+  mapping to proteins:
+    no match (to 0 protein)         : 0
+    unique match (to 1 protein)     : 6466
+    non-unique match (to >1 protein): 851
+
+
+-----------------------------------
+Protein statistics
+
+  total proteins searched: 48440
+  matched proteins       : 3619 (3619 new)
+  matched target proteins: 2498 (69 %)
+  matched decoy proteins : 1121 (30 %)
+  orphaned proteins      : 0 (all removed)
+-----------------------------------
+
+
+MSGFPlusAdapter took 02:27 m (wall), 5.09 s (CPU), 0.42 s (system), 4.67 s (user); Peak Memory Usage: 325 MB.
+
+
+MSGFPlusAdapter finished!
+
+ProteinQuantifier started. Processing ...
+
+Experimental design (Identification derived):
+  files: 1  fractions: 1  labels: 1  samples: 1
+
+
+
+Quantifying peptides...
+
+
+
+Processing summary - number of...
+...spectra: 6917 identified
+...peptides: 4082 identified and quantified (considering best hits only)
+...proteins/protein groups: 285 quantified, 2618 with fewer than 3 peptides
+
+
+ProteinQuantifier took 0.81 s (wall), 0.78 s (CPU), 0.03 s (system), 0.75 s (user); Peak Memory Usage: 52 MB.
+
+
+ProteinQuantifier finished!
+
+Output file 'C:\Users\konrad_guest\Documents\Studia\semestr_4\techniki_wysokoprzepustowe\spektro\results\TOPPAS_out\005-ProteinQuantifier-out\\qExactive01819_profile.unknown' written.

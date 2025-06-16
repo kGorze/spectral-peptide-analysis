@@ -1,0 +1,105 @@
+# Pliki danych - nie commitujemy dużych plików danych
+data/*.mzML
+data/*.mzml
+data/*.raw
+data/*.RAW
+data/*.mzXML
+data/*.mzxml
+data/*.mgf
+data/*.MGF
+data/*.fasta
+data/*.FASTA
+data/*.csarr
+data/*.cnlcp
+data/*.cseq
+data/*.canno
+
+
+
+
+
+
+
+# Biblioteki - duże pliki spektralne
+libs/*.mzML
+libs/*.mzml
+libs/*.mgf
+libs/*.MGF
+
+# Wyniki analiz
+results/*.png
+results/*.pdf
+results/*.tsv
+results/*.txt
+results/*.featureXML
+results/*.mzid
+results/*.xlsx
+results/*.json
+
+# Pliki tymczasowe Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Środowiska wirtualne
+venv/
+env/
+ENV/
+
+
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Pliki konfiguracyjne lokalne
+config.local.yml
+*.env
+.env
+
+# Pliki backupu
+*.bak
+*.backup
+
+# Temporary files
+*.tmp
+*.temp 
+data/MSV000097085/082322_NM_14-1.mzML
+data/MSV000097085/082322_NM_C-5.mzML
+data/MSV000097085/082422_NM_14-2.mzML
+data/MSV000097085/082422_NM_C-6.mzML
+data/MSV000097085/082522_NM_14-3.mzML
+data/MSV000097085/082522_NM_14-4.mzML
+data/MSV000097085/082522_NM_C-7.mzML
+data/MSV000097085/082522_NM_C-8.mzML
+

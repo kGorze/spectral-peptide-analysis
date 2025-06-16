@@ -1,0 +1,31 @@
+version: '2.4'
+
+services:
+  mass-spec-analyzer:
+    build: .
+    container_name: spektro-analyzer
+    mem_limit: 12g            # limit RAM
+    memswap_limit: 15g        # limit RAM + swap
+    volumes:
+      # Montowanie lokalnego katalogu data do kontenera
+      - ./data:/workspace/data
+      # Montowanie katalogu results dla wyników
+      - ./results:/workspace/results
+      # Montowanie skryptów jeśli chcesz je edytować lokalnie  
+      - ./scripts:/workspace/scripts
+      # Montowanie notebooków dla Jupyter
+      - ./notebooks:/workspace/notebooks
+      # Montowanie katalogu libs dla bibliotek spektralnych (GNPS itp.)
+      - ./libs:/workspace/libs
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+    ports:
+      # Port dla Jupyter Notebook jeśli chcesz go używać
+      - "8888:8888"
+    environment:
+      - DISPLAY=${DISPLAY:-:0}
+    # Pozwala na uruchomienie GUI aplikacji (dla matplotlib)
+    # volumes:
+    #   - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    #   - /home/$USER/.Xauthority:/home/user/.Xauthority:rw 
