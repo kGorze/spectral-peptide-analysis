@@ -1,5 +1,7 @@
 
 ## Analiza widma białek przy pomocy OpenMS
+[![Docker Pulls](https://img.shields.io/docker/pulls/kgorzel306/spectral-peptide-analysis.svg)](https://hub.docker.com/r/kgorzel306/spectral-peptide-analysis)  
+[![Docker Image Size](https://img.shields.io/docker/image-size/kgorzel306/spectral-peptide-analysis/latest.svg)](https://hub.docker.com/r/kgorzel306/spectral-peptide-analysis/tags)
 ## Pochodzenie danych
 Jako że dane było bardzo trudno poszukać samodzielnie ze względu na to, że trzeba było dobrać odpowiedni plik .mzML oraz fasta, skorzystałem ze strony która udostępnia materiały do nauki używania narzędzi OpenMS do identyfikacji Peptide i Protein ID - [Galaxy Training](https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/protein-id-oms/tutorial.html#input-data). 
 Z tej strony znalazłem dane, które pochodzą z "**Test dataset for ProteinID**" autorstwa *Vaudel, Marc*; *Martens, Lennart* ;*Sigloch, Florian Christoph* stamtąd zabrałem pliki
